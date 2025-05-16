@@ -1,0 +1,247 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  overflow-x: hidden;
+  background: #333;
+  color: #333;
+}
+
+.top-bar {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-image: url('Imagenes/nubes2.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+  position: relative;
+  min-height: 150px;
+}
+
+.logo-text {
+  font-family: 'Dancing Script', cursive;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #2bbaf3;
+}
+
+.slogan {
+  font-family: 'Dancing Script', cursive;
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: #40baf3;
+  margin-top: 0.3rem;
+}
+
+.center-icon {
+  display: flex;
+  justify-content: center;
+}
+
+.icon {
+  width: 150px;
+  height: 150px;
+  object-fit: contain;
+}
+
+.auth-buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 0.6rem;
+}
+
+.auth-buttons button {
+  background: #3e98ff;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  font-size: 0.95rem;
+  font-weight: bold;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+  max-width: 160px;
+  width: 100%;
+}
+
+.auth-buttons button:hover {
+  transform: translateY(-4px);
+  background: #ffb889;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.main-nav {
+  display: flex;
+  justify-content: space-between;
+  background: #ffb889;
+  padding: 1rem;
+}
+
+.main-nav button {
+  flex: 1;
+  margin: 0 0.5rem;
+  background: #ffb889;
+  color: white;
+  border: none;
+  padding: 1.2rem 0;
+  font-size: 1.1rem;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.main-nav button:hover {
+  transform: translateY(-5px);
+  background: #ffb889;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.hero {
+  position: relative;
+  height: 50vh;
+  background-image: url('Imagenes/avion2.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+  color: white;
+  overflow: hidden;
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.hero-content {
+  position: relative;
+  max-width: 900px;
+  padding: 3rem;
+  z-index: 2;
+  background-color: rgba(0,0,0,0.6);
+  border-radius: 12px;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  overflow-y: auto;
+  max-height: 80vh;
+}
+
+.hero-content1 {
+  position: relative;
+  max-width: 900px;
+  padding: 3rem;
+  z-index: 2;
+  background-color: rgba(0,0,0,0.6);
+  border-radius: 12px;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  overflow-y: auto;
+  max-height: 80vh;
+}
+.hero-content2 {
+  position: relative;
+  max-width: 900px;
+  padding: 3rem;
+  z-index: 2;
+  background-color: rgba(0,0,0,0.6);
+  border-radius: 12px;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  overflow-y: auto;
+  max-height: 80vh;
+}
+.hero-content3 {
+  position: relative;
+  max-width: 900px;
+  padding: 3rem;
+  z-index: 2;
+  background-color: rgba(0,0,0,0.6);
+  border-radius: 12px;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  overflow-y: auto;
+  max-height: 80vh;
+}
+
+.hero-content4 {
+  position: relative;
+  max-width: 900px;
+  padding: 3rem;
+  z-index: 2;
+  background-color: rgba(0,0,0,0.6);
+  border-radius: 12px;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  overflow-y: auto;
+  max-height: 80vh;
+}
+
+
+.content-section {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 0.7s ease;
+}
+
+.content-section.visible {
+  opacity: 2;
+  transform: translateY(0);
+}
+
+.content-section h2, .content-section h3 {
+  margin-bottom: 0.5rem;
+  color: #00c3ff;
+}
+
+.content-section ul {
+  margin-left: 1.5rem;
+  margin-bottom: 1rem;
+  list-style-type: none;
+  padding-left: 0;
+}
+
+
+.footer {
+  background: #333;
+  color: #fff;
+  text-align: center;
+  padding: 2rem 1rem;
+  margin-top: 2rem;
+}
+
+/*aqui este definidos las variables conectadas al js para que puedan desaparecer*/
+
+.hero-content,
+.hero-content1,
+.hero-content2,
+.hero-content3,
+.hero-content4 {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.hero-content.visible,
+.hero-content1.visible,
+.hero-content2.visible,
+.hero-content3.visible,
+.hero-content4.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
