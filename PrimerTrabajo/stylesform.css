@@ -12,7 +12,7 @@ body {
   align-items: center;
 }
 
-.form-container {
+.formulario {
   background-color: rgba(15, 186, 192, 0.6); 
   padding: 2rem;
   border-radius: 10px;
@@ -21,12 +21,12 @@ body {
   box-shadow: 0 0 15px rgba(0,0,0,0.3);
 }
 
-.form-container h2 {
+.formulario h2 {
   text-align: center;
   margin-bottom: 10px;
 }
 
-.form-container input {
+.formulario input {
   width: 90%;
   padding: 10px;
   margin: 10px 0;
@@ -34,7 +34,7 @@ body {
   border: none;
 }
 
-.form-container button {
+.formulario button {
 display: block;
 width: 50%;
 margin: 15px auto 0 auto;
@@ -48,7 +48,7 @@ margin: 15px auto 0 auto;
 
 }
 
-.form-container button:hover {
+.formulario button:hover {
   background-color: #eb1728;
 
 }
